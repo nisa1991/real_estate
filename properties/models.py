@@ -79,6 +79,9 @@ class Property(models.Model):
         null = False,
         blank=False
     ) 
+    #ndryshon emrin e tabeles
+    class Meta:
+        db_table = "property"
 
 class City(models.Model):
     name=models.CharField(
@@ -87,3 +90,5 @@ class City(models.Model):
         null=False,
         blank=False
         )   
+    class Meta:
+        db_table = "city"
